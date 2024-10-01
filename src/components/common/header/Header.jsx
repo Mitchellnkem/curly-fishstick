@@ -7,7 +7,7 @@ import Head from './Head'
 const Header = () => {
 	const [click, setClick] = useState(false)
   return (
-	<div>
+	<>
 	  <Head />
 	  <header>
 		<nav className="flexSB">
@@ -51,10 +51,7 @@ const Header = () => {
 			
 		</nav>
 	  </header>
-
-
-
-	</div>
+	</>
   )
 }
 
