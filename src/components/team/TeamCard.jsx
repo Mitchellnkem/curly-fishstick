@@ -1,15 +1,16 @@
 
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { team } from 'react-router-dom'
+// import { team } from 'react-router-dom'
 
-const TeamCard = () => {
+const TeamCard = ({ team }) => {
   return (
 	<>
 	  {team.map((val) => (
 		// eslint-disable-next-line react/jsx-key
-		<div className="items shadow">
+		<div key={val.id} className="items shadow">
 			<div className="img">
-				<img src={val.cover} alt="" />
+				<img src={val.cover} alt="{val.name}" />
 				<div className="overlay">
 					<i className='fab fa-facebook-f icon'></i>
 					<i className='fab fa-twitter'></i>

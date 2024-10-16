@@ -3,7 +3,7 @@
 import React from "react"
 
 
-const Heading = () => {
+const Heading = ({subtitle, title}) => {
  	 return (
 		<> 
 			<div id="heading">

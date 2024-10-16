@@ -32,11 +32,11 @@ const Footer = () => {
           <div className='box link'>
             <h3>Explore</h3>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
+              {blog.map((val, index) => (
+                <li key={index}>
+                  <a href={val.link}>{val.name}</a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className='box link'>
@@ -51,21 +51,21 @@ const Footer = () => {
           </div>
           <div className='box'>
             <h3>Recent Post</h3>
-            {blog.slice(0, 3).map((val) => (
-              <div className='items flexSB'>
+            {blog.slice(0, 3).map((val, index) => (
+              <div className='items flexSB' key={val.id || index}>
                 <div className='img'>
-                  <img src={val.cover} alt='' />
+                  <img src={val.cover} alt={val.title} />
                 </div>
                 <div className='text'>
                   <span>
                     <i className='fa fa-calendar-alt'></i>
-                    <label htmlFor=''>{val.date}</label>
+                    <label>{val.date}</label>
                   </span>
                   <span>
                     <i className='fa fa-user'></i>
-                    <label htmlFor=''>{val.type}</label>
+                    <label>{val.type}</label>
                   </span>
-                  <h4>{val.title.slice(0, 40)}...</h4>
+                  <h4>{val.title.length > 40 ? `${val.title.slice(0, 40)}...` : val.title}...</h4>
                 </div>
               </div>
             ))}
@@ -91,7 +91,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GorkhCoder
+          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GHOST & KodPyhton
         </p>
       </div>
     </>

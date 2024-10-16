@@ -15,7 +15,7 @@ const Head = () => {
 				<i className="fab fa-facebook-f icon"></i>
 				<i className="fab fa-instagram icon"></i>
 				<i className="fab fa-twitter icon"></i>
-				<i className="fab fa-youtube"></i>
+				{/* <i className="fab fa-youtube"></i> */}
 			</div>
 		</div>
 	  </section>
