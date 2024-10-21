@@ -10,11 +10,11 @@ const AboutCard = () => {
   return (
 	<>
 	  	<section className="aboutHome">
-			<div className="container flexSB">
+			<div className="container_flexSB">
 				<div className="left row">
 					<img src="../images/about.png" alt="" />
 				</div>
-				<div className="right row">
+				<div className="right--row">
 					<Heading subtitle="LEARN ANYTHING AT ANYTIME" title='Benefits About Online Learning'  />
 					<div className="items">
 						{homeAbout.map((val, index) => (

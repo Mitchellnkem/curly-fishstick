@@ -1,0 +1,36 @@
+.aboutHome{
+	padding: 50px 0;
+}
+
+.aboutHome .container_flexSB{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 60px;
+}
+
+.aboutHome .left{
+	width: 50%;
+	
+}
+
+.aboutHome .right{
+	width: 50%;
+}
+
+.aboutHome .right .items{
+	margin-top: 50px;
+}
+
+.aboutHome .right .item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.right-row{
+	align-items: center;
+	padding-left: -375px;
+}
+
+

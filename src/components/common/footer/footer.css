@@ -1,5 +1,5 @@
 .newletter {
-	background-color: #1eb2a6;
+	background-color: teal;
 	padding: 50px 0;
 	color: #fff;
   }
@@ -44,7 +44,7 @@
 	}
   }
   footer .logo span {
-	color: #1eb2a6;
+	color: teal;
 	font-size: 14px;
   }
   footer .logo p {
@@ -52,7 +52,7 @@
 	margin: 30px 0 15px 0;
   }
   footer .logo .icon {
-	background-color: #1eb2a6;
+	background-color: teal;
 	color: white;
 	margin-right: 10px;
   }
@@ -81,7 +81,7 @@
   footer .items span,
   footer .items i {
 	font-size: 12px;
-	color: #1eb2a6;
+	color: teal;
 	margin-right: 5px;
 	text-transform: capitalize;
   }
@@ -96,7 +96,7 @@
   footer .last i {
 	width: 60px;
 	font-size: 20px;
-	color: #1eb2a6;
+	color: teal;
   }
   .legal {
 	text-align: center;
@@ -108,6 +108,6 @@
 	font-size: 15px;
   }
   .legal i {
-	color: #1eb2a6;
+	color: teal;
   }
   
